@@ -5,6 +5,8 @@
 !/.config/
 !/.config/alacritty/
 !/.config/alacritty/alacritty.yml
+!/.config/fish/
+!/.config/fish/config.fish
 !/.config/coc/
 !/.config/coc/extensions/
 !/.config/coc/extensions/package.json
