@@ -19,7 +19,7 @@
 !/.config/memo/
 !/.config/memo/**
 !/.config/nvim
-!/.config/vim
+!/.config/vim/
 !/.config/yarn/
 !/.config/yarn/global/
 !/.config/yarn/global/package.json
