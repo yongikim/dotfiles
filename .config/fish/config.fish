@@ -19,3 +19,4 @@ source $OMF_PATH/init.fish
 function fish_greeting
 end
 
+source /Users/yongikim/.cargo/env 
