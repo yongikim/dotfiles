@@ -17,6 +17,10 @@ Plug 'autozimu/LanguageClient-neovim', {
 " go
 Plug 'mattn/vim-goimports', { 'for': 'go' }
 
+" rust
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'racer-rust/vim-racer', { 'for': 'rust' }
+
 " color scheme
 Plug 'cocopon/iceberg.vim'
 
