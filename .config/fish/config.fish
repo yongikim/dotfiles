@@ -7,6 +7,7 @@ alias pull='git pull'
 alias push='git push'
 alias cat='bat'
 alias tmux='tmux -f ~/.tmux.conf'
+alias ls='exa --icons'
 
 status --is-interactive; and source (rbenv init -|psub)
 
