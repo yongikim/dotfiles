@@ -4,6 +4,7 @@ call plug#begin('~/.config/vim_plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'pechorin/any-jump.vim'
 
 " ruby / rails
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
