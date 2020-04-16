@@ -22,6 +22,7 @@
 !/.config/yarn/global/package.json
 !/.gitconfig
 !/.gitignore_global
+!/.latexmkrc
 !/.irbrc
 !/.p10k.zsh
 !/.skhdrc
