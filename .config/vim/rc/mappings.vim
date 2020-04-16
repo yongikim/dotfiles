@@ -8,3 +8,5 @@ inoremap <silent> っj <ESC>
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprev<CR>
 nnoremap <C-d> :bd<CR>
+
+let g:maplocalleader="L"

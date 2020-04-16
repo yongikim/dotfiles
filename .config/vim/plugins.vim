@@ -22,6 +22,9 @@ Plug 'mattn/vim-goimports', { 'for': 'go' }
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'racer-rust/vim-racer', { 'for': 'rust' }
 
+" tex
+Plug 'lervag/vimtex'
+
 " color scheme
 Plug 'cocopon/iceberg.vim'
 
