@@ -8,6 +8,8 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
 
 " ruby / rails
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
