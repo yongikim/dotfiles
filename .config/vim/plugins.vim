@@ -10,6 +10,7 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
+Plug 'ntpeters/vim-better-whitespace'
 
 " ruby / rails
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
