@@ -16,7 +16,7 @@ command! -bang -nargs=? -complete=dir Files
 command! -bang -nargs=? -complete=dir History call fzf#vim#history(fzf#vim#with_preview())
 
 " :Rgコマンド実行時にプレビューを表示する
-nnoremap <silent> <C-g> :Rg<CR>
+nnoremap <silent> ,r :Rg<CR>
 command! -bang -nargs=* Rg
 \ call fzf#vim#grep(
 \   'rg --column --line-number --smart-case --no-heading --color=always '.shellescape(<q-args>), 1,
