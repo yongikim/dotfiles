@@ -67,3 +67,9 @@ if (has("termguicolors"))
   set t_Co=256
   set background=dark
 endif
+
+" augroup my_tex_settings
+"   autocmd!
+"   au BufNewFile,BufRead *.tex :e ++enc=cp932
+"   au BufWrite *.tex :se fenc=cp932
+" augroup END
