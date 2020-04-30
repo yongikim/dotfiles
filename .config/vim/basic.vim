@@ -1,4 +1,4 @@
-syntax enable 
+syntax enable
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
@@ -18,7 +18,7 @@ scriptencoding utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-boms,utf-8
 set fileformats=unix,dos,mac
-set showcmd 
+set showcmd
 
 " タブ・インデント
 set expandtab
