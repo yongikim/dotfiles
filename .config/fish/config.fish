@@ -12,12 +12,9 @@ alias ls='exa --icons'
 status --is-interactive; and source (rbenv init -|psub)
 
 # set -gx OMF_PATH $HOME/.local/share/omf
-# set -gx FZF_DEFAULT_COMMAND 'ag -G ""'
-set fish_theme agnoster
-
-# source $OMF_PATH/init.fish
 
 function fish_greeting
 end
 
+# source $OMF_PATH/init.fish
 # source /Users/yongikim/.cargo/env
