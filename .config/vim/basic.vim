@@ -6,6 +6,7 @@ set laststatus=2
 set cmdheight=2
 set hidden
 set list
+set nowrap
 
 " バックアップ・スワップファイルを作成しない
 set noswapfile
