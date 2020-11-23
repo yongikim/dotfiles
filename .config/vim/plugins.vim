@@ -1,6 +1,9 @@
 call plug#begin('~/.config/vim_plugged')
 
+
 " all languages
+Plug 'vim-syntastic/syntastic'
+let g:polyglot_disabled = ['latex']
 Plug 'sheerun/vim-polyglot'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'prabirshrestha/async.vim'
@@ -27,6 +30,7 @@ Plug 'mattn/vim-goimports', { 'for': 'go' }
 " rust
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'racer-rust/vim-racer', { 'for': 'rust' }
+Plug 'wagnerf42/vim-clippy'
 
 " tex
 Plug 'lervag/vimtex'
