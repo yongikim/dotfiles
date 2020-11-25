@@ -2,7 +2,7 @@ call plug#begin('~/.config/vim_plugged')
 
 
 " all languages
-Plug 'vim-syntastic/syntastic'
+" Plug 'vim-syntastic/syntastic'
 let g:polyglot_disabled = ['latex']
 Plug 'sheerun/vim-polyglot'
 Plug 'editorconfig/editorconfig-vim'

@@ -16,5 +16,6 @@ status --is-interactive; and source (rbenv init -|psub)
 function fish_greeting
 end
 
+starship init fish | source
 # source $OMF_PATH/init.fish
 # source /Users/yongikim/.cargo/env

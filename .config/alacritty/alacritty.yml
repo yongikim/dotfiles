@@ -4,8 +4,8 @@ env:
 
 font:
   normal:
-    family: DroidSansMono Nerd Font
-  size: 13
+    family: HackGenConsole Nerd Font
+  size: 16
 
 window:
   startup_mode:
