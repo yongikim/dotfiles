@@ -17,6 +17,8 @@
 /.config/karabiner/automatic_backups/**
 !/.config/vim/
 !/.config/vim/**
+!/.config/nvim/
+!/.config/nvim/**
 !/.config/yarn/
 !/.config/yarn/global/
 !/.config/yarn/global/package.json
@@ -50,3 +52,4 @@
 !/bin/**
 !/README.md
 !/Makefile
+.DS_Store
