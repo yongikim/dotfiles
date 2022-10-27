@@ -8,3 +8,5 @@ vim.keymap.set('n', '#', [[#<Cmd>lua require('hlslens').start()<CR>]], kopts)
 vim.keymap.set('n', 'g*', [[g*<Cmd>lua require('hlslens').start()<CR>]], kopts)
 vim.keymap.set('n', 'g#', [[g#<Cmd>lua require('hlslens').start()<CR>]], kopts)
 vim.keymap.set('n', '<Leader>l', ':noh<CR>', kopts)
+
+require("hlslens").setup()

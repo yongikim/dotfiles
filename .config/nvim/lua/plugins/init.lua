@@ -63,15 +63,33 @@ require("packer").startup(function(use)
   }) -- 単語検索で何個目のヒットかをカーソル横に表示
 
   -- LSP
-  use("neovim/nvim-lspconfig")
-  use("williamboman/mason.nvim")
-  use("williamboman/mason-lspconfig.nvim")
+  use({
+    "neovim/nvim-lspconfig",
+    config = function()
+      get_setup("lspconfig")
+    end
+  })
+  use({
+    "williamboman/mason.nvim",
+    config = function()
+      require("mason").setup()
+    end
+  })
+  use({
+    "williamboman/mason-lspconfig.nvim",
+    config = get_setup("mason-lspconfig")
+  })
 
   -- Comment out
   -- use 'tpope/vim-commentary'
 
   -- 補完
-  use("hrsh7th/nvim-cmp")
+  use({
+    "hrsh7th/nvim-cmp",
+    config = function()
+      require("cmp").setup()
+    end
+  })
   use("hrsh7th/cmp-nvim-lsp")
   use("hrsh7th/vim-vsnip")
   use("hrsh7th/cmp-path")
@@ -140,7 +158,9 @@ require("packer").startup(function(use)
   use({
     "startup-nvim/startup.nvim", -- 起動画面
     requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
-    config = require("startup").setup(),
+    config = function()
+      require("startup").setup()
+    end
   })
   use({
     "j-hui/fidget.nvim", -- nvim-lspの稼働状況を表示
@@ -153,6 +173,7 @@ require("packer").startup(function(use)
   use({
     "nvim-lualine/lualine.nvim",
     requires = { "kyazdani42/nvim-web-devicons", opt = true },
+    config = get_setup("lualine")
   })
   use({
     "SmiteshP/nvim-navic", -- 今いる関数名をステータスラインに表示
@@ -162,7 +183,9 @@ require("packer").startup(function(use)
     "akinsho/bufferline.nvim", -- バッファライン
     tag = "v2.*",
     requires = "kyazdani42/nvim-web-devicons",
-    config = require("bufferline").setup({}),
+    config = function()
+      require("bufferline").setup()
+    end
   })
   use("onsails/lspkind.nvim") -- 補完の候補の横にアイコンを表示
   use({
@@ -174,7 +197,9 @@ require("packer").startup(function(use)
   })
   use({
     "lewis6991/gitsigns.nvim", -- Git情報を行番号の左に表示
-    config = require("gitsigns").setup(),
+    config = function()
+      require("gitsigns").setup()
+    end
   })
   use({ -- エラー情報を表示
     "folke/trouble.nvim",
@@ -189,21 +214,10 @@ require("packer").startup(function(use)
     tag = "*",
     config = get_setup("toggleterm"),
   })
+
+  require("plugins.lsp")
 end)
 
 -- colorscheme
 vim.cmd([[colorscheme kanagawa]])
 
--- フッター
-local navic = require("nvim-navic")
-require("lualine").setup({
-  options = { theme = "kanagawa" },
-  -- navic
-  sections = {
-    lualine_c = {
-      { navic.get_location, cond = navic.is_available },
-    },
-  },
-})
-
-require("plugins.lsp")
