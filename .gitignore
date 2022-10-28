@@ -44,6 +44,7 @@
 !/.zsh/**
 .zsh_history
 .zcompdump
+/.config/nvim/plugin/packer_compiled.lua
 
 !/.gitignore
 !/.github/
