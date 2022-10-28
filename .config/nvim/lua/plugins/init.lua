@@ -134,7 +134,14 @@ require("packer").startup(function(use)
     requires = { "tjdevries/colorbuddy.nvim" },
     config = get_setup("neosolarized"),
   })
-  use("rebelot/kanagawa.nvim")
+  use({
+    "rebelot/kanagawa.nvim",
+    config = function()
+      require('kanagawa').setup({
+        transparent = true
+      })
+    end
+  })
   use("folke/tokyonight.nvim")
   use("ishan9299/nvim-solarized-lua") -- treesitterに対応したsolarized
   use({
