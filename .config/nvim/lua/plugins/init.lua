@@ -65,9 +65,7 @@ require("packer").startup(function(use)
   -- LSP
   use({
     "neovim/nvim-lspconfig",
-    config = function()
-      get_setup("lspconfig")
-    end
+    config = get_setup("lspconfig")
   })
   use({
     "williamboman/mason.nvim",
@@ -86,9 +84,7 @@ require("packer").startup(function(use)
   -- 補完
   use({
     "hrsh7th/nvim-cmp",
-    config = function()
-      require("cmp").setup()
-    end
+    config = get_setup("cmp")
   })
   use("hrsh7th/cmp-nvim-lsp")
   use("hrsh7th/vim-vsnip")
