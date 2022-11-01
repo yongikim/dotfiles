@@ -1,8 +1,6 @@
 set -x LANG ja_JP.UTF-8
 alias reload='source ~/.config/fish/config.fish'
 alias gst='git status'
-alias dsales='cd ~/projects/sales;docker-compose start sales redis;docker attach sales'
-alias bsales='cd ~/projects/sales;yarn run start:sales:dev'
 alias pull='git pull'
 alias push='git push'
 alias tmux='tmux -f ~/.tmux.conf'
