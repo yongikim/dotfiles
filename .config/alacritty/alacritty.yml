@@ -4,10 +4,15 @@ env:
 
 font:
   normal:
-    family: HackGenConsole Nerd Font
-  size: 16
+    family: HackGen35Nerd Console
+  size: 15
 
 window:
+  padding:
+    x: 2
+    y: 2
+  decorations: buttonless
+  opacity: 0.9
   startup_mode:
     Maximized
 
@@ -18,18 +23,18 @@ colors:
     background: '0x161821'
     foreground: '0xd2d4de'
 
-    # Normal colors
+  # Normal colors
   normal:
     black:   '0x161821'
     red:     '0xe27878'
-    green:   '0xb4be82'
+    green:   '0x83ac8e'
     yellow:  '0xe2a478'
     blue:    '0x84a0c6'
     magenta: '0xa093c7'
     cyan:    '0x89b8c2'
     white:   '0xc6c8d1'
 
-    # Bright colors
+  # Bright colors
   bright:
     black:   '0x6b7089'
     red:     '0xe98989'
@@ -39,3 +44,4 @@ colors:
     magenta: '0xada0d3'
     cyan:    '0x95c4ce'
     white:   '0xd2d4de'
+
