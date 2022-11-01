@@ -5,11 +5,23 @@ alias dsales='cd ~/projects/sales;docker-compose start sales redis;docker attach
 alias bsales='cd ~/projects/sales;yarn run start:sales:dev'
 alias pull='git pull'
 alias push='git push'
-alias cat='bat'
 alias tmux='tmux -f ~/.tmux.conf'
-alias ls='exa --icons'
 
-status --is-interactive; and source (rbenv init -|psub)
+if type -q bat
+  alias cat='bat'
+end
+
+if type -q exa
+  alias ls='exa --icons'
+end
+
+if type -q nvim
+  alias vi=nvim
+end
+
+if type -q rbenv
+  status --is-interactive; and source (rbenv init -|psub)
+end
 
 # set -gx OMF_PATH $HOME/.local/share/omf
 
