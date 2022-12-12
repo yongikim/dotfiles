@@ -224,6 +224,12 @@ require("packer").startup(function(use)
 	})
 
 	require("plugins.lsp")
+
+	-- Tex
+	use({
+		"lervag/vimtex",
+		config = get_setup("vimtex"),
+	})
 end)
 
 -- colorscheme
