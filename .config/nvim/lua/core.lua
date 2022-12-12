@@ -1,5 +1,7 @@
 vim.g.mapleader = ","
 vim.keymap.set("i", "jj", "<ESC>")
+vim.keymap.set("n", "j", "gj")
+vim.keymap.set("n", "k", "gk")
 
 -- buffer操作
 vim.keymap.set("n", "<C-p>", "<CMD>:bp<CR>")
