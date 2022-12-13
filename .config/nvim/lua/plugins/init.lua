@@ -129,17 +129,19 @@ require("packer").startup(function(use)
 			require("nvim-colorizer").setup()
 		end,
 	})
-	use({
-		"svrana/neosolarized.nvim", -- Solarized
-		requires = { "tjdevries/colorbuddy.nvim" },
-		config = get_setup("neosolarized"),
-	})
+	-- use({
+	-- 	"svrana/neosolarized.nvim", -- Solarized
+	-- 	requires = { "tjdevries/colorbuddy.nvim" },
+	-- 	config = get_setup("neosolarized"),
+	-- })
 	use({
 		"rebelot/kanagawa.nvim",
 		config = function()
 			require("kanagawa").setup({
 				transparent = true,
+				theme = "dragon",
 			})
+			vim.cmd("colorscheme kanagawa")
 		end,
 	})
 	use("folke/tokyonight.nvim")
@@ -231,6 +233,3 @@ require("packer").startup(function(use)
 		config = get_setup("vimtex"),
 	})
 end)
-
--- colorscheme
-vim.cmd([[colorscheme kanagawa]])
