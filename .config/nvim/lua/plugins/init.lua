@@ -6,15 +6,15 @@ require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 
 	-- Sessions
-	use({
-		"rmagatti/auto-session",
-		config = function()
-			require("auto-session").setup({
-				log_level = "error",
-				auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
-			})
-		end,
-	})
+	-- use({
+	-- 	"rmagatti/auto-session",
+	-- 	config = function()
+	-- 		require("auto-session").setup({
+	-- 			log_level = "error",
+	-- 			auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
+	-- 		})
+	-- 	end,
+	-- })
 
 	-- Filer
 	use({
@@ -144,6 +144,13 @@ require("packer").startup(function(use)
 			vim.cmd("colorscheme kanagawa")
 		end,
 	})
+	-- use({
+	-- 	"shaunsingh/solarized.nvim",
+	-- 	config = function()
+	-- 		require("solarized").set()
+	-- 		vim.cmd("colorscheme solarized-high")
+	-- 	end,
+	-- })
 	use("folke/tokyonight.nvim")
 	use("ishan9299/nvim-solarized-lua") -- treesitterに対応したsolarized
 	use({
